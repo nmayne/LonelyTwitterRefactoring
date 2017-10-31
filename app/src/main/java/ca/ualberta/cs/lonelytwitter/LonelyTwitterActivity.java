@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import ca.ualberta.cs.lonelytweet.NormalLonelyTweet;
+
 public class LonelyTwitterActivity extends Activity {
 
 	private EditText bodyText;
@@ -58,6 +60,14 @@ public class LonelyTwitterActivity extends Activity {
 		} else {
 			Toast.makeText(this, "Invalid tweet", Toast.LENGTH_SHORT).show();
 		}
+	}
+
+	public List<NormalLonelyTweet> getTweets() {
+		return tweets;
+	}
+
+	public void setTweets(List<NormalLonelyTweet> tweets) {
+		this.tweets = tweets;
 	}
 
 	public void clear(View v) {

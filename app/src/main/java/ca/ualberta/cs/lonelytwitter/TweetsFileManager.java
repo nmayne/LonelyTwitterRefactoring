@@ -12,6 +12,8 @@ import java.util.List;
 import android.content.Context;
 import android.util.Log;
 
+import ca.ualberta.cs.lonelytweet.NormalLonelyTweet;
+
 public class TweetsFileManager {
 
 	public static final String FILE_NAME = "file.sav";
